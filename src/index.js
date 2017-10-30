@@ -41,8 +41,7 @@ function getResponse(modules) {
   modules.map(item => {
     const object = {
       title: item.status,
-      description: item.name,
-      author: item.lastResult
+      description: item.name
     }
 
     return xml.rss['#'].channel['#'].item.push(object)
