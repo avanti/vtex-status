@@ -27,7 +27,7 @@ function getResponse(modules) {
         version: '2.0'
       },
       '#': {
-        modules: {
+        channel: {
           '#': {
             title: 'VTEX modules status',
             description: 'XML VTEX modules status',
@@ -39,7 +39,7 @@ function getResponse(modules) {
   }
 
   modules.map(item => {
-    return xml.rss['#'].modules['#'].item.push(item)
+    return xml.rss['#'].channel['#'].item.push(item)
   })
 
   return xmlConvert(xml)
