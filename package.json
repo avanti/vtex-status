@@ -6,6 +6,9 @@
   "author": "Carlo Schneider <carlo.schneider at penseavanti.com.br>",
   "repository": "https://github.com/avanti/vtex-status",
   "license": "MIT",
+  "engines": {
+    "node": "8.1.4"
+  },
   "scripts": {
     "start": "node src/index.js",
     "lint": "xo",
