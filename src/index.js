@@ -39,7 +39,13 @@ function getResponse(modules) {
   }
 
   modules.map(item => {
-    return xml.rss['#'].channel['#'].item.push(item)
+    const object = {
+      title: item.status,
+      description: item.name,
+      pubDate: item.lastResult
+    }
+
+    return xml.rss['#'].channel['#'].item.push(object)
   })
 
   return xmlConvert(xml)
