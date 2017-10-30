@@ -41,7 +41,8 @@ function getResponse(modules) {
   modules.map(item => {
     const object = {
       title: item.status,
-      description: item.name
+      description: item.name,
+      link: 'http://penseavanti.com.br/'
     }
 
     return xml.rss['#'].channel['#'].item.push(object)
