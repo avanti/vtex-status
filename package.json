@@ -1,0 +1,34 @@
+{
+  "name": "vtex-status",
+  "version": "1.0.0",
+  "description": "XML VTEX modules status",
+  "main": "src/index.js",
+  "author": "Carlo Schneider <carlo.schneider at penseavanti.com.br>",
+  "repository": "https://github.com/avanti/vtex-status",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js",
+    "lint": "xo",
+    "dev": "nodemon src/index.js --exec 'yarn run lint && node'"
+  },
+  "dependencies": {
+    "express": "^4.16.1",
+    "node-fetch": "^1.7.3",
+    "object-to-xml": "^1.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1",
+    "xo": "^0.18.2"
+  },
+  "xo": {
+    "semicolon": false,
+    "space": true,
+    "rules": {
+      "object-curly-spacing": 0,
+      "no-new": 0,
+      "capitalized-comments": [
+        0
+      ]
+    }
+  }
+}
