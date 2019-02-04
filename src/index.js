@@ -4,7 +4,7 @@ const xmlConvert = require('object-to-xml')
 
 const app = express()
 
-const VTEX_MODULES = 'https://apigateway.vtex.com/healthcheck/api/pub/modules'
+const VTEX_MODULES = 'http://monitoring.vtex.com/api/healthcheck/modules'
 
 async function getModules() {
   let data
